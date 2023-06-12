@@ -1,0 +1,39 @@
+// SPDX-License-Identifier: UNLICENCED 
+
+pragma solidity 0.8.7 ;
+contract VariableChallenge{
+    uint x;
+    int y;
+    string name;
+    bool z;
+
+    function setx(uint _x) public returns (uint) {
+        x = _x;
+        return x;
+    }  
+
+    function sety(int _y) public returns (int) {
+        y = _y;
+        return y;
+    }   
+    function setname(string memory _ayususs) public returns (string memory) {
+        name = _ayususs;
+        return name;
+    }  
+    function setz(bool _z) public returns (bool) {
+        z = _z;
+        return z;
+    }   
+    function getx() public view returns (uint){
+        return x;
+    } 
+    function gety() public view returns (int){
+        return y;
+    } 
+    function getname() public view returns (string memory){
+        return name;
+    }   
+    function getz() public view returns (bool){
+        return z;
+    } 
+}
